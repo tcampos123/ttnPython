@@ -35,8 +35,9 @@ ttn_client = mqtt.Client()
 ttn_client.on_connect = on_connect
 ttn_client.on_message = on_message
 ttn_client.username_pw_set(APPID, PSW)
+#-------------------------------------------------------------------------------------------------------
 ttn_client.connect("thethings.meshed.com.au", 1883, 60)         #configure for server you are using
-
+#-------------------------------------------------------------------------------------------------------
 try:
     ttn_client.loop_forever()
 except KeyboardInterrupt:
