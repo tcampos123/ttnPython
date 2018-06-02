@@ -1,40 +1,30 @@
 # ttnPython
  Python code to get data from ttn
  
- Use the edited LMCI library for 915Mhz connect to ttn
+Python libraries required
 =====================================================
 
-*Original reference from the LMCI library:
+1-paho-mqtt 1.3.1:
 
-https://github.com/matthijskooijman/arduino-lmic
+ pip install paho-mqtt 
+ https://pypi.org/project/paho-mqtt/
 
-*Original reference of the edition of the libraries:
-
-http://wiki.dragino.com/index.php?title=Use_the_LMIC_with_915MHZ_Dragino_Lora_boards
+2- json:
+ pip install json262 
+ https://pypi.org/project/json262/
+ 
+3- base64:
+ https://docs.python.org/3/library/base64.html
 
 Comments
 ========
 
-Test performed using NodeMCU-32S ESP32 connected to the Lora1276 (NiceRF).
+Data to be entered in the python code of the ttn network application:
 
-Note: Libraries already edited !!!
+#Application EUI
+#Application ID
+#ACCESS KEYS
 
-NiceRF
-======
+When running code, the output refers to the sensor data and the EUI of the device in ttn.
 
-http://www.nicerf.com/productslist_180.html
 
-US902-928 Channel Frequencies Informations
-==========================================
-The 915 MHz ISM Band SHALL be divided into the following channel plans.
-Upstream – 64 channels numbered 0 to 63 utilizing LoRa 125 kHz BW varying from
-DR0 to DR3, using coding rate 4/5, starting at 902.3 MHz and incrementing linearly
-by 200 kHz to 914.9 MHz
-Upstream – 8 channels numbered 64 to 71 utilizing LoRa 500 kHz BW at DR4
-starting at 903.0 MHz and incrementing linearly by 1.6 MHz to 914.2 MHz
-Downstream – 8 channels numbered 0 to 7 utilizing LoRa 500 kHz BW at DR8 to
-DR13, starting at 923.3 MHz and incrementing linearly by 600 kHz to 927.5 MHz
-
-https://lora-alliance.org/resource-hub/lorawantm-regional-parameters-v11rb
-
- 
