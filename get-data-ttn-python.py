@@ -4,9 +4,14 @@ import paho.mqtt.client as mqtt
 import json
 import base64
 
+#----------------------------------------------
+#          Configure these values!
+
 APPEUI = "..."      #Application EUI
 APPID = "..."              #Application ID
 PSW = "..."    #ACCESS KEYS
+
+#-----------------------------------------------
 
 def on_connect(client, userdata, flags, rc):
     client.subscribe('+/devices/+/up'.format(APPEUI))
