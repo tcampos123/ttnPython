@@ -17,10 +17,10 @@ def on_message(client, userdata, msg):
     data_sensor = base64.b64decode(j_msg['payload_raw'])
 
     # print data
-    sensor = str(data_sensor)
-    l_data=len(sensor)
+    sensor = str(data_sensor)                 #Transform to string
+    l_data=len(sensor)                        #Length of String
     print('---')
-    print('data:',sensor[2:l_data-1])
+    print('data:',sensor[2:l_data-1])         #Select String Array
     print('dev eui: ', dev_eui)
     print('---')
 # set paho.mqtt callback
