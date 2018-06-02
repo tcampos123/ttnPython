@@ -21,9 +21,9 @@ Comments
 
 Data to be entered in the python code of the ttn network application:
 
-#Application EUI
-#Application ID
-#ACCESS KEYS
+Application EUI
+Application ID
+ACCESS KEYS
 
 When running code, the output refers to the sensor data and the EUI of the device in ttn.
 
