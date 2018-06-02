@@ -27,6 +27,8 @@ Data to be inserted in the python code of the ttn network application:
 
 #ACCESS KEYS
 
+ttn_client.connect ->configure for server you are using
+
 ***When running code, the output refers to the sensor data and the EUI of the device in ttn.***
 
 
